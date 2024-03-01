@@ -13,13 +13,5 @@ public class DataLoader {
 	public static HashMap<Integer, TitanRegistry> readTitanRegistry() throws IOException{
 	
 	}
-	ahrharoa
-
-<<<<<<< HEAD
 	
-=======
-	do you see this
->>>>>>> branch 'master' of https://github.com/YA533N/AOT_game.git
 }
-
-yes i do

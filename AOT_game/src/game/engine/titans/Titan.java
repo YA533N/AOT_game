@@ -38,7 +38,7 @@ public abstract class Titan implements Comparable<Titan>,Attackee,Attacker,Mobil
 		return currentHealth;
 	}
 	public void setCurrentHealth(int health){
-		currentHealth=health;
+		currentHealth=(health>=0)? health:0;
 	}
 	
 	//gets BaseDamage from the attacker(titan)
@@ -74,7 +74,7 @@ public abstract class Titan implements Comparable<Titan>,Attackee,Attacker,Mobil
 
 	//compares the titans distance from the base wall
 	public int comapareTo(Titan o){
-		return distanceFromBase-o.getDistance();
+		return this.distanceFromBase-o.getDistance();
 	
 	}
 	

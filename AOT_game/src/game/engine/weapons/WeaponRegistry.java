@@ -15,6 +15,7 @@ public class WeaponRegistry {
 	public WeaponRegistry(int code, int price, int damage, String name){
 		this.code=code;
 		this.price=price;
+		this.damage=damage;
 		this.name=name;
 	}
 	public WeaponRegistry(int code, int price, int damage, String name, int minRange, int maxRange){

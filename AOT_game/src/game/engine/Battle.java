@@ -14,7 +14,7 @@ import game.engine.titans.TitanRegistry;
 import game.engine.wepons.factory.WeaponFactory;
 
 public class Battle {
-	private static final int[][]PHASES_APPROACHING_TITANS= {{1,1,1,2,1,3,4},{2,2,2,1,3,3,4},{4,4,4,4,4,4,4}}
+	private static final int[][]PHASES_APPROACHING_TITANS= {{1,1,1,2,1,3,4},{2,2,2,1,3,3,4},{4,4,4,4,4,4,4}};
 	private static final int WALL_BASE_HEALTH=10000;
 	
 	private int numberOfTurns;

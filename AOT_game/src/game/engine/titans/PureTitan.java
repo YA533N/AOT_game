@@ -10,7 +10,7 @@ public class PureTitan extends Titan {
 				speed,resourcesValue,dangerLevel);
 	}
 	@Override
-	public int compareTo(Titan arg0) {
+	public int compareTo(Titan o) {
 		// TODO Auto-generated method stub
 		return 0;
 	}

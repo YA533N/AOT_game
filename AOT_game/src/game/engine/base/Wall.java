@@ -17,12 +17,20 @@ public class Wall implements Attackee{
 		return currentHealth;
 	}
 	public void setCurrentHealth(int health){
-		this.currentHealth=health;
+		if(health>=0) {
+			this.currentHealth=health;
+		}
+		else this.currentHealth=0;
 	}
-	@Override
+	public int getBaseHealth() {
+		return baseHealth;
+	}
 	public int getResourcesValue() {
-		// TODO Auto-generated method stub
-		return 0;
+		return resourcesValue;
 	}
+	
+	
+
+
 
 }

@@ -2,7 +2,7 @@ package game.engine.weapons;
 
 public class VolleySpreadCannnon extends Weapon {
 	
-	private final int WEAPON_CODE=3;		
+	private static final int WEAPON_CODE=3;		
 	private final int minRange;
 	private final int maxRange;
 	
@@ -13,22 +13,13 @@ public class VolleySpreadCannnon extends Weapon {
 		
 	}
 
-	@Override
-	public int getCurrentHealth() {
-		// TODO Auto-generated method stub
-		return 0;
+	public int getMinRange() {
+		return minRange;
 	}
 
-	@Override
-	public void setCurrentHealth(int health) {
-		// TODO Auto-generated method stub
-		
+	public int getMaxRange() {
+		return maxRange;
 	}
 
-	@Override
-	public int getResourcesValue() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
 
 }

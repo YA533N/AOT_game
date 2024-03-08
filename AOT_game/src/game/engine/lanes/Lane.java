@@ -7,7 +7,7 @@ import game.engine.weapons.Weapon;
 import java.util.ArrayList;
 import java.util.PriorityQueue;
 
-public class Lane implements Comparable {
+public class Lane implements Comparable<Lane> {
 	
 	private final Wall laneWall;
 	private int dangerLevel=0;
@@ -41,11 +41,11 @@ public class Lane implements Comparable {
 		return dangerLevel-o.dangerLevel;
 	}
 
-	@Override
-	public int compareTo(Object arg0) {
-		// TODO Auto-generated method stub
-		return 0;
+	public void setDangerLevel(int dangerLevel) {
+		this.dangerLevel = dangerLevel;
 	}
+
+	
 
 	
 	

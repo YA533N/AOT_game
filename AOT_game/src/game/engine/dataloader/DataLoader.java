@@ -1,11 +1,12 @@
 package game.engine.dataloader;
 import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.HashMap;
 
 import game.engine.titans.TitanRegistry;
 import game.engine.weapons.WeaponRegistry;
 
-import java.io.IOException;
-import java.util.HashMap;
 
 public class DataLoader {
 	
@@ -14,7 +15,7 @@ public class DataLoader {
 	
 	public static HashMap<Integer, TitanRegistry> readTitanRegistry() throws IOException{
 		HashMap<Integer,TitanRegistry> titanRegistry=new HashMap<>();
-		BufferedReader inp= BufferedReader(new FileReader(TITANS_FILE_NAME));
+		BufferedReader inp= new BufferedReader(new FileReader(TITANS_FILE_NAME));
 		String grid;
 		while((grid = inp.readLine())!=null) {
 			String [] data =grid.split(",");
@@ -35,9 +36,9 @@ public class DataLoader {
 	public static HashMap<Integer, WeaponRegistry> readWeaponRegistry() throws IOException {
         HashMap<Integer, WeaponRegistry> weaponRegistry = new HashMap<>();
 
-        BufferedReader input = new BufferedReader(new FileReader(WEAPONS_FILE_NAME));
+        BufferedReader inp = new BufferedReader(new FileReader(WEAPONS_FILE_NAME));
             String line;
-            while ((line = input.readLine()) != null) {
+            while ((line = inp.readLine()) != null) {
                 String[] data = line.split(",");
                 int code = Integer.parseInt(data[0]);
                 int price = Integer.parseInt(data[1]);

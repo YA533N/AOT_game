@@ -1,6 +1,6 @@
 package game.engine.exceptions;
 
-public abstract class InvalidLaneException extends Exception {
+public abstract class InvalidLaneException extends GameActionException {
 	static final String MSG="Action done on invalid lane";
 	
 	public InvalidLaneException() {

@@ -3,7 +3,7 @@ package game.engine.wepons.factory;
 import game.engine.weapons.Weapon;
 
 public class FactoryResponse {
-	private final Weapon weapon;
+	private Weapon weapon;
 	private final int remainingResources;
 	public FactoryResponse(Weapon weapon, int remainingResources) {
 		this.weapon=weapon;

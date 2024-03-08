@@ -73,9 +73,8 @@ public abstract class Titan implements Comparable<Titan>,Attackee,Attacker,Mobil
 	}
 
 	//compares the titans distance from the base wall
-	public int comapareTo(Titan o){
+	public int compareTo(Titan o){
 		return this.distanceFromBase-o.getDistance();
-	
 	}
 	
 

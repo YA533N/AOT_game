@@ -9,11 +9,4 @@ public class ColossalTitan extends Titan{
 
 	}
 	
-	
-	@Override
-	public int compareTo(Titan o) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-	
 }

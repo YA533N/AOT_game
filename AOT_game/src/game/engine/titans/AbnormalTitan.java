@@ -9,11 +9,7 @@ public class AbnormalTitan extends Titan{
 		super(baseHealth,baseDamage,heightInMeters,distanceFromBase,
 				speed,resourcesValue,dangerLevel);
 	}
-	@Override
-	public int compareTo(Titan o) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
+	
 	
 
 	

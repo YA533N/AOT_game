@@ -15,7 +15,7 @@ public abstract class Titan implements Comparable<Titan>,Attackee,Attacker,Mobil
 	private final int resourcesValue;
 	private final int dangerLevel;
 	
-	Titan(int baseHealth, int baseDamage, int heightInMeters, int distanceFromBase, int
+	public Titan(int baseHealth, int baseDamage, int heightInMeters, int distanceFromBase, int
 			speed, int resourcesValue, int dangerLevel){
 		
 		this.baseHealth=baseHealth;

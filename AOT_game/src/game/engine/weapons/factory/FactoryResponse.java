@@ -1,4 +1,4 @@
-package game.engine.wepons.factory;
+package game.engine.weapons.factory;
 
 import game.engine.weapons.Weapon;
 

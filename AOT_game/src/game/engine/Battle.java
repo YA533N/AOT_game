@@ -11,7 +11,7 @@ import game.engine.dataloader.DataLoader;
 import game.engine.lanes.Lane;
 import game.engine.titans.Titan;
 import game.engine.titans.TitanRegistry;
-import game.engine.wepons.factory.WeaponFactory;
+import game.engine.weapons.factory.WeaponFactory;
 
 public class Battle {
 	private static final int[][]PHASES_APPROACHING_TITANS= {{1,1,1,2,1,3,4},{2,2,2,1,3,3,4},{4,4,4,4,4,4,4}};
